@@ -9,18 +9,8 @@
 /* module to create pinterest like responsive masonry grid system for angular */
 
 ;(function (root, factory) {
-  if (typeof module !== 'undefined' && module.exports) {
-    // CommonJS
-    module.exports = factory(require('angular'), root);
-  } else if (typeof define === 'function' && define.amd) {
-    // AMD
-    define(['angular'], function (angular) {
-        return factory(angular, root);
-    });
-  } else {
     // Global Variables
     factory(root.angular, root);
-  }
 }(this, function (angular, window, undefined) {
   "use strict";
 
